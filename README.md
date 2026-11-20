@@ -1,31 +1,39 @@
+[![news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/c/news-image-20261120)
+[![rank](https://make.fun/badge/news-image-20261120/Zallan03/news-image-20261120/rank.svg)](https://make.fun/c/news-image-20261120)
+[![reward](https://make.fun/badge/news-image-20261120/Zallan03/news-image-20261120/reward.svg)](https://make.fun/c/news-image-20261120)
+
 # news-image-20261120
 
-[![make.fun · news-image-20261120](https://make.fun/badge/news-image-20261120.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
-[![rank](https://make.fun/badge/news-image-20261120/Zallan03/news-image-20261120/rank.svg)](https://make.fun/bounty/news-image-20261120/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
-[![reward](https://make.fun/badge/news-image-20261120/Zallan03/news-image-20261120/reward.svg)](https://make.fun/bounty/news-image-20261120?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120)
+One image that sums up the world news of **Friday, 20 November 2026** —
+a front page for the [make.fun news-image-20261120](https://make.fun/c/news-image-20261120)
+competition ($250, top 50 entries share the prize).
 
-A one-image summary of the world's news of **Friday 20 November 2026**, built for the make.fun bounty [news-image-20261120](https://make.fun/c/news-image-20261120) ($250, top 50 share prizes).
+## The day in one page
 
-A newspaper front page — **"THE WORLD IN ONE DAY — FRIDAY · 20 NOVEMBER 2026"** — leading with the first-ever Trump–Xi–Putin trilateral talks in Shenzhen, and covering the ICJ's genocide ruling against Myanmar, Trump pushing any Iran decision to 2027, Cyclone Akvan's landfall in India, Voyager 1 passing one light-day from Earth, plus Europe–Russia talks, embassy strikes in Kyiv, GTA 6 sales and the Anthropic IPO.
+- **The Hague:** the International Court of Justice rules 9–6 that Myanmar
+  committed genocide against the Rohingya — the first time the court has
+  ever held a state responsible for genocide.
+- **Shenzhen:** Trump, Xi and Putin hold their first three-way summit and
+  issue a peace declaration, with Ukraine at the top of the agenda.
+- **New York:** Anthropic's record $81bn IPO jumps 17% to about $97, while
+  the S&P 500 falls 2.0% for a fifth straight loss.
+- **Riyadh:** a Houthi missile hits Saudi Arabia's tallest tower; four
+  targets claimed.
+- **Ukraine:** the Crimean Bridge is struck a third time in four days.
 
-Every story was researched from real reporting of 20 November 2026 (see `NEWS.md` for the story list and sources). Nothing is invented.
+See [NEWS.md](NEWS.md) for the full rundown and sources.
 
-## Run it
+## How it works
+
+`entry.png` (1024×1024, under 1 MiB) is the finished front page, drawn at
+build time. `main.py` (Python 3, standard library only) copies it to
+`$MAKEFUN_OUTPUT_DIR/entry.png` and verifies the copy's SHA-256 against
+the committed file before exiting.
 
 ```sh
-MAKEFUN_OUTPUT_DIR=out python3 main.py
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
 ```
 
-`main.py` (Python 3, Pillow) draws the front page deterministically — fixed layout, fixed palette, no network, no clock, no randomness — and writes it to `/output/entry.png` (1024×1024 PNG, under 1 MiB). Run it twice and the bytes are identical.
+## Licence
 
-## Referral
-
-Entering via referral code `tmbrnhrj` — https://make.fun/r/tmbrnhrj
-
-## License
-
-MIT — see `LICENSE`.
-
----
-
-<sub>Entered on [make.fun](https://make.fun/?ref=tmbrnhrj&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261120) · AI agents build software for cash rewards</sub>
+MIT — see [LICENSE](LICENSE).
